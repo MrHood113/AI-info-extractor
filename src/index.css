@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Default Warm Cream Theme (Matches Manabi Image) */
+  --bg-app: #FAF7F2;
+  --bg-sidebar: #FAF7F2;
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #F6F2EC;
+  --bg-input: #FFFFFF;
+  --border-color: #ECE5DA;
+  --border-subtle: #F3ECE2;
+  
+  --accent: #B85028;
+  --accent-hover: #9E4320;
+  --accent-soft: #F7EBE5;
+  --accent-border: #E8BFB0;
+
+  --text-main: #2C2623;
+  --text-muted: #736C65;
+  --text-subtle: #968F87;
+  
+  --yellow-callout-bg: #FEF9E7;
+  --yellow-callout-border: #F5E298;
+  --yellow-callout-text: #7C6818;
+}
+
+[data-theme='clean-white'] {
+  --bg-app: #F8FAFC;
+  --bg-sidebar: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #F1F5F9;
+  --bg-input: #FFFFFF;
+  --border-color: #E2E8F0;
+  --border-subtle: #EDF2F7;
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-soft: #EFF6FF;
+  --accent-border: #BFDBFE;
+  --text-main: #0F172A;
+  --text-muted: #64748B;
+  --text-subtle: #94A3B8;
+  --yellow-callout-bg: #FEFCE8;
+  --yellow-callout-border: #FEF08A;
+  --yellow-callout-text: #854D0E;
+}
+
+[data-theme='matcha-sage'] {
+  --bg-app: #F4F8F4;
+  --bg-sidebar: #F4F8F4;
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #EAF2EA;
+  --bg-input: #FFFFFF;
+  --border-color: #DDE8DD;
+  --border-subtle: #E8F0E8;
+  --accent: #2D6A4F;
+  --accent-hover: #1B4332;
+  --accent-soft: #EBF5F0;
+  --accent-border: #B7E4C7;
+  --text-main: #1B2B20;
+  --text-muted: #526B57;
+  --text-subtle: #7A9680;
+  --yellow-callout-bg: #FCF9E8;
+  --yellow-callout-border: #F0E89E;
+  --yellow-callout-text: #6A6014;
+}
+
+[data-theme='rose-peach'] {
+  --bg-app: #FFF8F6;
+  --bg-sidebar: #FFF8F6;
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #FDF0ED;
+  --bg-input: #FFFFFF;
+  --border-color: #F8E2DC;
+  --border-subtle: #FAECE8;
+  --accent: #D94E41;
+  --accent-hover: #B83B2F;
+  --accent-soft: #FDEEEB;
+  --accent-border: #F7BCB4;
+  --text-main: #2E1B18;
+  --text-muted: #7E5F5A;
+  --text-subtle: #A38580;
+  --yellow-callout-bg: #FFFBEB;
+  --yellow-callout-border: #FDE68A;
+  --yellow-callout-text: #92400E;
+}
+
+[data-theme='sunset-lilac'] {
+  --bg-app: #FAF7FD;
+  --bg-sidebar: #FAF7FD;
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #F3EDFB;
+  --bg-input: #FFFFFF;
+  --border-color: #EAE1F5;
+  --border-subtle: #F2ECFA;
+  --accent: #7C3AED;
+  --accent-hover: #6D28D9;
+  --accent-soft: #F4EDFD;
+  --accent-border: #DDD6FE;
+  --text-main: #211538;
+  --text-muted: #64567C;
+  --text-subtle: #8F81AA;
+  --yellow-callout-bg: #FEF9EB;
+  --yellow-callout-border: #FCE89C;
+  --yellow-callout-text: #7A5B0B;
+}
+
+[data-theme='cozy-dark'] {
+  --bg-app: #1A1816;
+  --bg-sidebar: #1A1816;
+  --bg-card: #24201D;
+  --bg-card-subtle: #2C2824;
+  --bg-input: #2C2824;
+  --border-color: #38332E;
+  --border-subtle: #2C2723;
+  --accent: #D97736;
+  --accent-hover: #F97316;
+  --accent-soft: #38281F;
+  --accent-border: #7C4824;
+  --text-main: #F5EFEA;
+  --text-muted: #A8A099;
+  --text-subtle: #78716C;
+  --yellow-callout-bg: #332B14;
+  --yellow-callout-border: #6B5B24;
+  --yellow-callout-text: #FDE68A;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Custom Scrollbar for warm theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 130, 120, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 130, 120, 0.45);
+}
+
+.custom-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+}
+
+.custom-card-subtle {
+  background-color: var(--bg-card-subtle);
+  border: 1px solid var(--border-subtle);
+}
+
+.accent-btn {
+  background-color: var(--accent);
+  color: #FFFFFF;
+}
+
+.accent-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.accent-pill-active {
+  background-color: var(--accent);
+  color: #FFFFFF;
+  border-color: var(--accent);
+}
+
+.accent-pill-inactive {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+
+.accent-pill-inactive:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

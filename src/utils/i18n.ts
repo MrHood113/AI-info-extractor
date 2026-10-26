@@ -1,0 +1,316 @@
+export type Language = 'en' | 'vi';
+
+export const translations = {
+  en: {
+    // Brand
+    brandName: 'Manabi',
+    brandTagline: 'AI Learning & Info Extractor',
+    searchPlaceholder: 'Search materials, quizzes, notes...',
+
+    // Sidebar navigation
+    explore: 'Explore',
+    contentCreation: 'CONTENT CREATION',
+    materials: 'Materials',
+    quizzes: 'Quizzes',
+    flashcards: 'Flashcards',
+    collections: 'Collections',
+
+    studyTools: 'STUDY TOOLS',
+    notes: 'Notes',
+    reader: 'Reader',
+    tutors: 'Tutors',
+    pomodoro: 'Pomodoro',
+
+    planningOrg: 'PLANNING & ORGANIZATION',
+    planner: 'Planner',
+    kanbanBoard: 'Kanban Board',
+
+    socialProgress: 'SOCIAL & PROGRESS',
+    studyGroups: 'Study Groups',
+    achievements: 'Achievements',
+    statistics: 'Statistics',
+
+    account: 'ACCOUNT',
+    settings: 'Settings',
+    logout: 'Log Out',
+    login: 'Log In',
+    register: 'Sign Up',
+
+    // Main Studio
+    generateQuizTitle: 'Generate Quiz & Extract Info',
+    generateQuizSubtitle: 'Quickly create a new quiz, summary, and insights from your study materials!',
+    useAccurateInfo: 'Use documents with accurate factual information for best results.',
+    startMakingQuiz: 'Start making quiz',
+    stopGenerating: 'Stop stream',
+
+    // Input Tabs
+    tabFile: 'File',
+    tabText: 'Text',
+    tabLink: 'Link',
+    tabDrive: 'Drive',
+    tabMaterial: 'Material',
+    tabMedia: 'Media',
+    tabImage: 'Image',
+    tabYoutube: 'YouTube',
+
+    // Upload Dropzone
+    dropOrSelect: 'Drop or select files',
+    supportedFiles: 'Currently supported: PDF, DOCX, TXT, XLSX, MP4, MP3',
+    maxSizeNotice: 'Up to 5 files, 200MB total',
+    pasteUrlPlaceholder: 'Paste article or web link (e.g. https://example.com)...',
+    pasteYoutubePlaceholder: 'Paste YouTube video link (e.g. https://youtube.com/watch?v=...)...',
+    enterTextPlaceholder: 'Paste or type notes, lecture scripts, or document text here...',
+    sampleArticle: 'Sample Article: Artificial Intelligence',
+    sampleYoutube: 'Sample Video: Neural Networks',
+
+    // Right Configuration Sidebar
+    visibility: 'Visibility',
+    private: 'Private',
+    public: 'Public',
+
+    quizLanguage: 'Language of the quiz',
+    autoDetect: 'Auto Detect',
+    vietnamese: 'Vietnamese',
+    english: 'English',
+    japanese: 'Japanese',
+
+    questionTypes: 'Question Types',
+    mixedQuestions: 'Mixed (MCQ + Short Answer)',
+    multipleChoice: 'Multiple Choice Only',
+    keyInsightsOnly: 'Key Insights Only',
+    actionItemsOnly: 'Action Items Matrix',
+    structuredJson: 'Structured JSON Schema',
+    executiveSummary: 'Executive Summary',
+    swotAnalysis: 'SWOT Matrix',
+
+    numQuestions: 'Number of questions / items',
+    mode: 'Mode',
+    quizMode: 'Quiz',
+    summaryMode: 'Summary & Insights',
+    flashcardsMode: 'Flashcards',
+    studyGuideMode: 'Study Guide',
+
+    difficulty: 'Difficulty',
+    easy: 'Easy',
+    medium: 'Medium',
+    hard: 'Hard',
+
+    task: 'Task',
+    taskGenerateQuiz: 'Generate Quiz',
+    taskKeyInsights: '3-5 Key Insights',
+    taskActionItems: 'Action Items Matrix',
+    taskJsonEntities: 'Structured Entities (JSON)',
+    taskExecutiveSummary: 'Executive Summary',
+    taskSwotMatrix: 'SWOT Matrix',
+
+    parsingMode: 'Parsing Mode',
+    fastTextOnly: 'Fast (Text Only)',
+    balancedRecommended: 'Balanced (Recommended for most docs)',
+    premiumEnhanced: 'Premium (Enhanced accuracy for complex layouts)',
+    parsingCallout: 'Fast: Text-only, skips images/tables.\nBalanced: Recommended for most docs.\nPremium: Enhanced accuracy for complex layouts (Powered by Gemini 3.8 Flash 2M).',
+
+    customInstructions: 'Custom Instructions (optional)',
+    customInstructionsPlaceholder: 'e.g. Emphasize chapter 3 formulas and include real-world analogies...',
+
+    // Results & Telemetry
+    resultQuizTab: 'Interactive Quiz',
+    resultMarkdownTab: 'Markdown View',
+    resultTableTab: 'Interactive Table',
+    resultJsonTab: 'JSON Code',
+    copyButton: 'Copy 1-Click',
+    copiedText: 'Copied!',
+    downloadMd: 'Download .MD',
+    downloadJson: 'Download .JSON',
+    ttftLabel: 'TTFT Metric',
+    latencyLabel: 'Latency',
+    tokensLabel: 'Tokens',
+    statusReady: 'Ready',
+    statusStreaming: 'Streaming with Gemini 3.8 Flash...',
+
+    // Themes
+    themeWarmSand: 'Warm Cream / Terracotta',
+    themeModernWhite: 'Clean Sky White',
+    themeMatchaSage: 'Matcha Green',
+    themeRosePeach: 'Rose Peach',
+    themeSunsetLilac: 'Sunset Lavender',
+    themeCozyDark: 'Cozy Espresso Dark',
+
+    // Auth
+    signInTitle: 'Welcome back to Manabi',
+    signInSubtitle: 'Log in to access your materials, saved quizzes, and AI tools',
+    signUpTitle: 'Create your Manabi account',
+    signUpSubtitle: 'Join thousands of students and researchers learning faster with AI',
+    forgotPasswordTitle: 'Reset your password',
+    forgotPasswordSubtitle: "Enter your email address and we'll send you a recovery link",
+    fullName: 'Full Name',
+    emailAddress: 'Email Address',
+    password: 'Password',
+    confirmPassword: 'Confirm Password',
+    rememberMe: 'Remember me',
+    forgotPassword: 'Forgot password?',
+    signInButton: 'Sign In',
+    signUpButton: 'Create Account',
+    sendResetLink: 'Send Reset Link',
+    orContinueWith: 'or continue with',
+    googleSignIn: 'Continue with Google',
+    alreadyHaveAccount: 'Already have an account? Log in',
+    dontHaveAccount: "Don't have an account? Sign up",
+    backToLogin: 'Back to Sign In',
+  },
+  vi: {
+    // Brand
+    brandName: 'Manabi',
+    brandTagline: 'AI Trích Xuất & Học Tập Thông Minh',
+    searchPlaceholder: 'Tìm kiếm tài liệu, đề thi, ghi chú...',
+
+    // Sidebar navigation
+    explore: 'Khám phá',
+    contentCreation: 'SÁNG TẠO NỘI DUNG',
+    materials: 'Tài liệu',
+    quizzes: 'Đề trắc nghiệm',
+    flashcards: 'Thẻ ghi nhớ',
+    collections: 'Bộ sưu tập',
+
+    studyTools: 'CÔNG CỤ HỌC TẬP',
+    notes: 'Ghi chú',
+    reader: 'Trình đọc sách',
+    tutors: 'Gia sư AI',
+    pomodoro: 'Đồng hồ Pomodoro',
+
+    planningOrg: 'KẾ HOẠCH & TỔ CHỨC',
+    planner: 'Lịch học tập',
+    kanbanBoard: 'Bảng Kanban',
+
+    socialProgress: 'CỘNG ĐỒNG & TIẾN ĐỘ',
+    studyGroups: 'Nhóm học tập',
+    achievements: 'Thành tích',
+    statistics: 'Thống kê',
+
+    account: 'TÀI KHOẢN',
+    settings: 'Cài đặt',
+    logout: 'Đăng xuất',
+    login: 'Đăng nhập',
+    register: 'Đăng ký',
+
+    // Main Studio
+    generateQuizTitle: 'Tạo Bài Kiểm Tra & Trích Xuất Dữ Liệu',
+    generateQuizSubtitle: 'Nhanh chóng tạo đề trắc nghiệm, tóm tắt và insight từ tài liệu học tập của bạn!',
+    useAccurateInfo: 'Sử dụng tài liệu có thông tin chính xác để AI cho ra kết quả tốt nhất.',
+    startMakingQuiz: 'Bắt đầu tạo bài kiểm tra',
+    stopGenerating: 'Dừng luồng AI',
+
+    // Input Tabs
+    tabFile: 'Tệp tin',
+    tabText: 'Văn bản',
+    tabLink: 'Liên kết',
+    tabDrive: 'Drive',
+    tabMaterial: 'Thư viện',
+    tabMedia: 'Âm thanh',
+    tabImage: 'Hình ảnh',
+    tabYoutube: 'YouTube',
+
+    // Upload Dropzone
+    dropOrSelect: 'Kéo thả hoặc chọn tệp tin',
+    supportedFiles: 'Định dạng hỗ trợ: PDF, DOCX, TXT, XLSX, MP4, MP3',
+    maxSizeNotice: 'Tối đa 5 tệp, tổng dung lượng 200MB',
+    pasteUrlPlaceholder: 'Dán link bài viết hoặc trang web (ví dụ: https://example.com)...',
+    pasteYoutubePlaceholder: 'Dán đường dẫn video YouTube (ví dụ: https://youtube.com/watch?v=...)...',
+    enterTextPlaceholder: 'Nhập hoặc dán nội dung bài giảng, ghi chú vào đây...',
+    sampleArticle: 'Bài viết mẫu: Trí tuệ nhân tạo (AI)',
+    sampleYoutube: 'Video mẫu: Mạng nơ-ron nhân tạo',
+
+    // Right Configuration Sidebar
+    visibility: 'Quyền riêng tư',
+    private: 'Riêng tư',
+    public: 'Công khai',
+
+    quizLanguage: 'Ngôn ngữ kết quả',
+    autoDetect: 'Tự động phát hiện',
+    vietnamese: 'Tiếng Việt',
+    english: 'Tiếng Anh',
+    japanese: 'Tiếng Nhật',
+
+    questionTypes: 'Dạng câu hỏi / trích xuất',
+    mixedQuestions: 'Hỗn hợp (Trắc nghiệm + Tự luận)',
+    multipleChoice: 'Chỉ câu hỏi trắc nghiệm',
+    keyInsightsOnly: '3-5 Key Insights cốt lõi',
+    actionItemsOnly: 'Bảng Action Items & Ưu tiên',
+    structuredJson: 'Thực thể chuẩn JSON Schema',
+    executiveSummary: 'Tóm tắt điều hành (C-Level)',
+    swotAnalysis: 'Ma trận phân tích SWOT',
+
+    numQuestions: 'Số lượng câu hỏi / đề mục',
+    mode: 'Chế độ tạo',
+    quizMode: 'Đề thi trắc nghiệm',
+    summaryMode: 'Tóm tắt & Insights',
+    flashcardsMode: 'Thẻ Flashcards',
+    studyGuideMode: 'Hướng dẫn học tập',
+
+    difficulty: 'Độ khó',
+    easy: 'Dễ',
+    medium: 'Trung bình',
+    hard: 'Nâng cao',
+
+    task: 'Nhiệm vụ AI',
+    taskGenerateQuiz: 'Tạo đề trắc nghiệm',
+    taskKeyInsights: 'Tóm tắt Key Insights',
+    taskActionItems: 'Lập bảng Action Items',
+    taskJsonEntities: 'Trích xuất JSON Schema',
+    taskExecutiveSummary: 'Tóm tắt điều hành',
+    taskSwotMatrix: 'Phân tích SWOT',
+
+    parsingMode: 'Chế độ phân tích (Parsing)',
+    fastTextOnly: 'Nhanh (Chỉ văn bản thuần)',
+    balancedRecommended: 'Cân bằng (Khuyên dùng cho hầu hết tài liệu)',
+    premiumEnhanced: 'Cao cấp (Độ chính xác tối đa cho bảng biểu, hình ảnh)',
+    parsingCallout: 'Nhanh: Chỉ đọc văn bản, bỏ qua bảng/ảnh.\nCân bằng: Khuyên dùng cho đa số tài liệu.\nCao cấp: Nhận diện chính xác hình ảnh & layout phức tạp (Gemini 3.8 Flash 2M).',
+
+    customInstructions: 'Chỉ dẫn tùy chỉnh bổ sung (tùy chọn)',
+    customInstructionsPlaceholder: 'Ví dụ: Nhấn mạnh vào công thức chương 3 và kèm câu đố thực tiễn...',
+
+    // Results & Telemetry
+    resultQuizTab: 'Đề Trắc Nghiệm',
+    resultMarkdownTab: 'Bản Đọc Markdown',
+    resultTableTab: 'Bảng Dữ Liệu',
+    resultJsonTab: 'Mã JSON',
+    copyButton: 'Sao chép 1-Click',
+    copiedText: 'Đã sao chép!',
+    downloadMd: 'Tải về .MD',
+    downloadJson: 'Tải về .JSON',
+    ttftLabel: 'Tốc độ phản hồi (TTFT)',
+    latencyLabel: 'Thời gian chạy',
+    tokensLabel: 'Số Tokens',
+    statusReady: 'Sẵn sàng',
+    statusStreaming: 'Đang truyền dữ liệu từ Gemini 3.8 Flash...',
+
+    // Themes
+    themeWarmSand: 'Kem ấm / Terracotta',
+    themeModernWhite: 'Trắng xanh hiện đại',
+    themeMatchaSage: 'Xanh Matcha',
+    themeRosePeach: 'Hồng Đào',
+    themeSunsetLilac: 'Tím Hoàng Hôn',
+    themeCozyDark: 'Nâu Cà Phê Tối',
+
+    // Auth
+    signInTitle: 'Chào mừng bạn quay lại Manabi',
+    signInSubtitle: 'Đăng nhập để xem tài liệu, đề thi đã lưu và công cụ AI',
+    signUpTitle: 'Tạo tài khoản Manabi mới',
+    signUpSubtitle: 'Tham gia cùng hàng ngàn học sinh, sinh viên học tập hiệu quả với AI',
+    forgotPasswordTitle: 'Khôi phục mật khẩu',
+    forgotPasswordSubtitle: 'Nhập email của bạn để nhận liên kết khôi phục tài khoản',
+    fullName: 'Họ và tên',
+    emailAddress: 'Địa chỉ Email',
+    password: 'Mật khẩu',
+    confirmPassword: 'Xác nhận mật khẩu',
+    rememberMe: 'Ghi nhớ đăng nhập',
+    forgotPassword: 'Quên mật khẩu?',
+    signInButton: 'Đăng Nhập',
+    signUpButton: 'Đăng Ký Tài Khoản',
+    sendResetLink: 'Gửi Liên Kết Đặt Lại',
+    orContinueWith: 'hoặc tiếp tục bằng',
+    googleSignIn: 'Đăng nhập với Google',
+    alreadyHaveAccount: 'Đã có tài khoản? Đăng nhập ngay',
+    dontHaveAccount: 'Chưa có tài khoản? Đăng ký miễn phí',
+    backToLogin: 'Quay lại Đăng nhập',
+  },
+};
